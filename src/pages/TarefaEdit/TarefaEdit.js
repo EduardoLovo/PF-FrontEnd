@@ -36,65 +36,65 @@ const TarefaEdit = (props) => {
       <h1>Editar - Titulo da Tarefa</h1>
       <form className="add-form" onSubmit={handleSubmit}>
         <div className="add-form-group">
-          <label htmlFor="nome" className="add-form-group-label">
+          <label htmlFor="titulo" className="add-form-group-label">
             Titulo
           </label>
           <input
             type="text"
             id="nome"
-            name="nome"
+            name="titulo"
             value={fields.titulo}
             onChange={handleFieldsChange}
             className="add-form-group-input"
           />
         </div>
         <div className="add-form-group">
-          <label htmlFor="autor" className="add-form-group-label">
+          <label htmlFor="descricao" className="add-form-group-label">
             Descricao
           </label>
           <input
             type="text"
             id="autor"
-            name="autor"
+            name="descricao"
             value={fields.descricao}
             onChange={handleFieldsChange}
             className="add-form-group-input"
           />
         </div>
         <div className="add-form-group">
-          <label htmlFor="genero" className="add-form-group-label">
+          <label htmlFor="prioridade" className="add-form-group-label">
             Prioridade
           </label>
           <input
             type="text"
             id="genero"
-            name="genero"
+            name="prioridade"
             value={fields.prioridade}
             onChange={handleFieldsChange}
             className="add-form-group-input"
           />
         </div>
         <div className="add-form-group">
-          <label htmlFor="capa" className="add-form-group-label">
+          <label htmlFor="status" className="add-form-group-label">
             Status
           </label>
           <input
             type="text"
             id="capa"
-            name="capa"
+            name="status"
             value={fields.status}
             onChange={handleFieldsChange}
             className="add-form-group-input"
           />
         </div>
         <div className="add-form-group">
-          <label htmlFor="letra" className="add-form-group-label">
+          <label htmlFor="prazo" className="add-form-group-label">
             Prazo
           </label>
           <input
             type="text"
             id="letra"
-            name="letra"
+            name="prazo"
             value={fields.prazo}
             onChange={handleFieldsChange}
             className="add-form-group-input"

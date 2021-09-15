@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import './TarefaView.scss';
 import { Api } from '../../api/api'
 import { Link } from 'react-router-dom';
-// import 'react-responsive-modal/styles.css';
-// import { Modal } from 'react-responsive-modal';
+import 'react-responsive-modal/styles.css';
+import { Modal } from 'react-responsive-modal';
 // import { format, formatDistance, formatRelative, subDays } from 'date-fns'
 
 
@@ -58,7 +58,7 @@ const TarefaView = (props) => {
         </Link>
         <button className="btn btn-danger" onClick={onOpenModal}>Excluir</button>
       </div>
-      {/* <Modal open={open} onClose={onCloseModal} center
+      <Modal open={open} onClose={onCloseModal} center
         classNames={{
           overlayAnimationIn: 'customEnterOverlayAnimation',
           overlayAnimationOut: 'customLeaveOverlayAnimation',
@@ -69,7 +69,7 @@ const TarefaView = (props) => {
         <h2>Deseja realmente Excluir ?</h2>
         <button onClick={handleDelete} className="buttons">SIM</button>
         <button onClick={onCloseModal} className="buttons">NAO</button>
-      </Modal> */}
+      </Modal>
     </section>
   )
 }

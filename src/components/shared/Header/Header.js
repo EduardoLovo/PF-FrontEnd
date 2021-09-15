@@ -6,14 +6,14 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        
+        <h1>To Do List</h1> 
         <ul className="header-list">
-            <h1>To Do List</h1> 
+            
             <Link to="/" className="header-list-item">
               <li>Home</li>
             </Link>
             <Link to="/add" className="header-list-item">
-              <li>add</li>
+              <li>Adicionar Nova Tarefa</li>
             </Link>
         </ul>
         

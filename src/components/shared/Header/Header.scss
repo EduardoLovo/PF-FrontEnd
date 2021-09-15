@@ -1,26 +1,30 @@
 @import '../../../styles/style.scss';
 
 .header {
-    background-color: aqua;
+    background-color: rgb(54, 61, 155);
     color: white;
+    text-align: center;
     .container {
         @include container;
     }
     &-list {
-        margin: 0;
+        margin: auto;
         list-style: none;
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
+        text-align: center;
+        align-items: center;
+        
         &-item {
-            color: black;
+            color: white;
             padding: 1% 2%;
             text-decoration: none;
             cursor: pointer;
             transition: 0.4s all;
+            text-align: center;
+            align-items: center;
       
             &:hover {
-              color: #FFF;
+              color: white;
             }
         }  
     }
