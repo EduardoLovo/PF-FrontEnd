@@ -1,0 +1,27 @@
+@import '../../../styles/style.scss';
+
+.header {
+    background-color: aqua;
+    color: white;
+    .container {
+        @include container;
+    }
+    &-list {
+        margin: 0;
+        list-style: none;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        &-item {
+            color: black;
+            padding: 1% 2%;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.4s all;
+      
+            &:hover {
+              color: #FFF;
+            }
+        }  
+    }
+}

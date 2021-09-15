@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import './TarefaView.scss';
 import { Api } from '../../api/api'
 import { Link } from 'react-router-dom';
-import 'react-responsive-modal/styles.css';
-import { Modal } from 'react-responsive-modal';
-import { format, formatDistance, formatRelative, subDays } from 'date-fns'
+// import 'react-responsive-modal/styles.css';
+// import { Modal } from 'react-responsive-modal';
+// import { format, formatDistance, formatRelative, subDays } from 'date-fns'
 
 
 const TarefaView = (props) => {
@@ -44,20 +44,21 @@ const TarefaView = (props) => {
   return (
     <section className="view">
       <div className="view-img">
-        <img src={tarefa.capa} alt={tarefa.nome}/>
+        <img src={tarefa.capa} alt={tarefa.titulo}/>
       </div>
       <div className="view-info">
-        <p className="view-info-text"><b>Nome:</b> { tarefa.nome }</p>
-        <p className="view-info-text"><b>Autor:</b> { tarefa.autor }</p>
-        <p className="view-info-text"><b>Letra:</b> { tarefa.letra }</p>
-        <p className="view-info-text"><b>Duracao:</b> { tarefa.duracao }</p>
+        <p className="view-info-text"><b>Titulo:</b> { tarefa.titulo }</p>
+        <p className="view-info-text"><b>Descricao:</b> { tarefa.descricao }</p>
+        <p className="view-info-text"><b>Prioridade:</b> { tarefa.prioridade }</p>
+        <p className="view-info-text"><b>Status:</b> { tarefa.status }</p>
+        <p className="view-info-text"><b>Prazo:</b> { tarefa.prazo }</p>
         <p className="view-info-text"><b>Data Criacao:</b> { tarefa.dataCriacao }</p>
         <Link to={`/edit/${tarefa._id}`} >
           <button className="btn btn-success">Editar</button>
         </Link>
         <button className="btn btn-danger" onClick={onOpenModal}>Excluir</button>
       </div>
-      <Modal open={open} onClose={onCloseModal} center
+      {/* <Modal open={open} onClose={onCloseModal} center
         classNames={{
           overlayAnimationIn: 'customEnterOverlayAnimation',
           overlayAnimationOut: 'customLeaveOverlayAnimation',
@@ -68,7 +69,7 @@ const TarefaView = (props) => {
         <h2>Deseja realmente Excluir ?</h2>
         <button onClick={handleDelete} className="buttons">SIM</button>
         <button onClick={onCloseModal} className="buttons">NAO</button>
-      </Modal>
+      </Modal> */}
     </section>
   )
 }
