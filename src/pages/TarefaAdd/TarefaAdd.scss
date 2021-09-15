@@ -16,7 +16,7 @@
       flex-direction: column;
       justify-content: flex-start;
       &-label {
-        color: white;
+        color: black;
         font-size: 18px;
         margin-bottom: 2%;
         font-weight: bold;
@@ -41,12 +41,12 @@
 
       &-btn-salvar {
         @include buttons;
-        background: rgb(42, 41, 68);
+        background: rgb(27, 155, 59);
       }
 
       &-btn-cancelar {
         @include buttons;
-        background: rgba(42, 41, 68, 0.623);
+        background: rgba(119, 139, 130, 0.623);
       }
     }
   }
