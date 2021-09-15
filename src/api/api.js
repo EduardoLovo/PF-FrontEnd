@@ -1,5 +1,5 @@
 export const Api = {
-    url: 'https://to-do-list-eduardo.herokuapp.com/tarefas',
+    url: 'https://to-do-list-eduardo.herokuapp.com/tarefas/',
     fetchGet: () =>  fetch(Api.url),
     fetchGetById: (id) => fetch(Api.url + '/FindById/' + id),
     fetchPost: (body) => {
