@@ -16,8 +16,8 @@ const TarefaList = () => {
     const response = await Api.fetchGet();
     const data = await response.json();
     setTarefas(data);
+    console.log('tarefas=', data);
   }
-
   return (
     <div className="list">
       {tarefas.map((tarefa, index) => (
