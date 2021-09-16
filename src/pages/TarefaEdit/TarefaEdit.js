@@ -25,7 +25,7 @@ const TarefaEdit = (props) => {
   const handleSubmit = async (evento) => {
     evento.preventDefault();
     const dados = { ...fields };
-    dados.duracao = parseFloat(dados.duracao);
+    dados.dataCriacao = parseFloat(dados.dataCriacao);
     const result = await Api.fetchPut(dados, id);
     const response = await result.json();
     console.log(response);
